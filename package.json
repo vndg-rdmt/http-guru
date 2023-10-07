@@ -1,0 +1,29 @@
+{
+  "name": "http-guru",
+  "version": "1.0.0",
+  "description": "Frontend HTTP and requests library",
+  "main": "index.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vndg-rdmt/http-guru.git"
+  },
+  "keywords": [
+    "typescript",
+    "http",
+    "requests",
+    "types",
+    "headers",
+    "api",
+    "fetch",
+    "request",
+    "api request",
+    "http request"
+  ],
+  "author": "Belousov Daniil",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vndg-rdmt/http-guruissues"
+  },
+  "homepage": "https://github.com/vndg-rdmt/http-guru#readme"
+}
