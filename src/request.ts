@@ -58,7 +58,7 @@ export class HTTPRequestBuilder<T extends Object = AnyObject> {
      * @param init     limited {@link RequestInit}
      * @returns        request result, err
      */
-    public async request<Q extends any, H extends AnyObject, S extends any>(endpoint: string, method: HTTPMethod, body?: Q, headers?: HTTPHeaders<H>, init: HTTPRequestInit = {}): HTTPRequestResult<S> {
+    public async request<Q extends any, S extends any, H extends AnyObject = T>(endpoint: string, method: HTTPMethod, body?: Q, headers?: HTTPHeaders<H>, init: HTTPRequestInit = {}): HTTPRequestResult<S> {
         const reqInit = Object.defineProperties<RequestInit>(
             {}, Object.getOwnPropertyDescriptors(init),
         );
@@ -133,7 +133,7 @@ export class HTTPRequestBuilder<T extends Object = AnyObject> {
      * @param settings api static settings ({@link HTTPRequestBuildSettings}), to be built in the api request
      * @returns 
      */
-    public build<S extends any, Q extends Object | undefined = undefined, H extends AnyObject = T>(settings: HTTPRequestBuildSettings<H>): ApiHandle<Q, S> {
+    public build<S extends any, Q extends any | undefined = undefined, H extends AnyObject = T>(settings: HTTPRequestBuildSettings<H>): ApiHandle<Q, S> {
         // Full api endpoint.
         const url = this.host + settings.urlEndpoint;
         const reqInit: HTTPRequestInit = settings.requestInit || {};

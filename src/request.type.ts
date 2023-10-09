@@ -19,6 +19,10 @@
 
 import { HTTPContentType } from "./http-headers.type"
 
+
+/**
+ * All allowed defined HTTP methods
+ */
 export enum HTTPMethod {
     GET     = 'GET',
     POST    = 'POST',
