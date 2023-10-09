@@ -2,6 +2,10 @@
 
 Build typed, fast and unified http apis for your frontend apps.
 
+```bash
+npm i http-guru
+```
+
 ### Modules overview
 
 Packaged includes only one api building entry **HTTPRequestBuilder**.
