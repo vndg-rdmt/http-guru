@@ -1,7 +1,7 @@
 {
   "name": "http-guru",
   "version": "1.0.0",
-  "description": "Frontend HTTP and requests library",
+  "description": "Build typed, fast and unified http apis for your frontend apps",
   "main": "index.ts",
   "scripts": {},
   "repository": {
